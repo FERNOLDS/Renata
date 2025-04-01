@@ -1,0 +1,1108 @@
+{
+"SELECT table_name, column_name, data_type \nFROM information_schema.columns \nWHERE table_schema = 'public'": [
+	{
+		"table_name" : "clasificador_proveedores_gastos",
+		"column_name" : "id_company",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "role_feature",
+		"column_name" : "id_role",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "role_feature",
+		"column_name" : "id_feature",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "role_feature",
+		"column_name" : "is_active",
+		"data_type" : "boolean"
+	},
+	{
+		"table_name" : "company_user",
+		"column_name" : "id_company_user",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "company_user",
+		"column_name" : "id_company",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "company_user",
+		"column_name" : "id_user",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "company_user",
+		"column_name" : "is_active",
+		"data_type" : "boolean"
+	},
+	{
+		"table_name" : "company_user",
+		"column_name" : "created_at",
+		"data_type" : "timestamp without time zone"
+	},
+	{
+		"table_name" : "usuario",
+		"column_name" : "id_user",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "gastos_imagen",
+		"column_name" : "fecha_carga",
+		"data_type" : "timestamp without time zone"
+	},
+	{
+		"table_name" : "libro_mayor",
+		"column_name" : "id",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "libro_mayor",
+		"column_name" : "sum_debe",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "libro_mayor",
+		"column_name" : "sum_haber",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "libro_mayor",
+		"column_name" : "sum_deudor",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "libro_mayor",
+		"column_name" : "sum_acreedor",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "libro_mayor",
+		"column_name" : "fecha",
+		"data_type" : "timestamp without time zone"
+	},
+	{
+		"table_name" : "libro_mayor",
+		"column_name" : "calculado",
+		"data_type" : "boolean"
+	},
+	{
+		"table_name" : "libro_mayor",
+		"column_name" : "id_company",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "libro_mayor",
+		"column_name" : "id_cuenta",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "balance_general",
+		"column_name" : "id",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "balance_general",
+		"column_name" : "debe",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "balance_general",
+		"column_name" : "haber",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "balance_general",
+		"column_name" : "deudor",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "balance_general",
+		"column_name" : "acreedor",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "balance_general",
+		"column_name" : "activo",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "balance_general",
+		"column_name" : "pasivo",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "balance_general",
+		"column_name" : "perdida",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "balance_general",
+		"column_name" : "ganancia",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "balance_general",
+		"column_name" : "fecha",
+		"data_type" : "date"
+	},
+	{
+		"table_name" : "balance_general",
+		"column_name" : "usuario",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "balance_general",
+		"column_name" : "mes",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "balance_general",
+		"column_name" : "anual",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "balance_general",
+		"column_name" : "id_company",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "facturas_compra",
+		"column_name" : "id",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "facturas_compra",
+		"column_name" : "nro",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "facturas_compra",
+		"column_name" : "fecha_docto",
+		"data_type" : "date"
+	},
+	{
+		"table_name" : "facturas_compra",
+		"column_name" : "fecha_recepcion",
+		"data_type" : "date"
+	},
+	{
+		"table_name" : "facturas_compra",
+		"column_name" : "fecha_acuse",
+		"data_type" : "date"
+	},
+	{
+		"table_name" : "facturas_compra",
+		"column_name" : "monto_exento",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "facturas_compra",
+		"column_name" : "monto_neto",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "facturas_compra",
+		"column_name" : "monto_iva_recuperable",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "facturas_compra",
+		"column_name" : "monto_iva_no_recuperable",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "facturas_compra",
+		"column_name" : "monto_total",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "facturas_compra",
+		"column_name" : "monto_neto_activo_fijo",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "facturas_compra",
+		"column_name" : "iva_activo_fijo",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "facturas_compra",
+		"column_name" : "iva_uso_comun",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "facturas_compra",
+		"column_name" : "impto_sin_derecho_a_credito",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "facturas_compra",
+		"column_name" : "iva_no_retenido",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "facturas_compra",
+		"column_name" : "tabacos_puros",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "facturas_compra",
+		"column_name" : "tabacos_cigarrillos",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "facturas_compra",
+		"column_name" : "tabacos_elaborados",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "facturas_compra",
+		"column_name" : "valor_otro_impuesto",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "facturas_compra",
+		"column_name" : "tasa_otro_impuesto",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "facturas_compra",
+		"column_name" : "registrado",
+		"data_type" : "boolean"
+	},
+	{
+		"table_name" : "facturas_compra",
+		"column_name" : "id_company",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "boletas_honorarios",
+		"column_name" : "id",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "boletas_honorarios",
+		"column_name" : "id_company",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "boletas_honorarios",
+		"column_name" : "fecha",
+		"data_type" : "date"
+	},
+	{
+		"table_name" : "boletas_honorarios",
+		"column_name" : "numero_boleta",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "boletas_honorarios",
+		"column_name" : "fecha_anulacion",
+		"data_type" : "date"
+	},
+	{
+		"table_name" : "boletas_honorarios",
+		"column_name" : "bruto",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "boletas_honorarios",
+		"column_name" : "retenido",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "boletas_honorarios",
+		"column_name" : "pagado",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "boletas_honorarios",
+		"column_name" : "fecha_carga",
+		"data_type" : "timestamp without time zone"
+	},
+	{
+		"table_name" : "boletas_honorarios",
+		"column_name" : "id_usuario",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "boletas_honorarios",
+		"column_name" : "registrado",
+		"data_type" : "boolean"
+	},
+	{
+		"table_name" : "clasificador_cuentas",
+		"column_name" : "id_cuenta",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "tipo_gasto",
+		"column_name" : "id_tipo_gasto",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "clasificador_proveedores_gastos",
+		"column_name" : "id_proveedor",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "clasificador_proveedores_gastos",
+		"column_name" : "id_tipo_gasto",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "role_feature",
+		"column_name" : "id_role_feature",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "usuario",
+		"column_name" : "created_at",
+		"data_type" : "timestamp without time zone"
+	},
+	{
+		"table_name" : "usuario",
+		"column_name" : "updated_at",
+		"data_type" : "timestamp without time zone"
+	},
+	{
+		"table_name" : "usuario",
+		"column_name" : "is_active",
+		"data_type" : "boolean"
+	},
+	{
+		"table_name" : "usuario",
+		"column_name" : "is_expired",
+		"data_type" : "boolean"
+	},
+	{
+		"table_name" : "role",
+		"column_name" : "id_role",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "role_user",
+		"column_name" : "id_role_user",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "role_user",
+		"column_name" : "id_role",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "role_user",
+		"column_name" : "id_user",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "role_user",
+		"column_name" : "id_company",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "role_user",
+		"column_name" : "is_active",
+		"data_type" : "boolean"
+	},
+	{
+		"table_name" : "role_user",
+		"column_name" : "created_at",
+		"data_type" : "timestamp without time zone"
+	},
+	{
+		"table_name" : "feature",
+		"column_name" : "id_feature",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "id",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "nro",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "fecha_docto",
+		"data_type" : "date"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "fecha_recepcion",
+		"data_type" : "date"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "fecha_acuse",
+		"data_type" : "date"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "fecha_reclamo",
+		"data_type" : "date"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "monto_exento",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "monto_neto",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "monto_iva",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "monto_total",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "iva_retenido_total",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "iva_retenido_parcial",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "iva_no_retenido",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "iva_propio",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "iva_terceros",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "neto_comision_liquid_factura",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "exento_comision_liquid_factura",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "iva_comision_liquid_factura",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "iva_fuera_plazo",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "credito_empresa_constructora",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "impto_zona_franca",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "garantia_dep_envases",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "indicador_venta_sin_costo",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "indicador_servicio_periodico",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "monto_no_facturable",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "total_monto_periodo",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "venta_pasajes_transporte_nacional",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "venta_pasajes_transporte_internacional",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "valor_otro_impuesto",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "tasa_otro_impuesto",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "registrado",
+		"data_type" : "boolean"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "id_company",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "comprobantes",
+		"column_name" : "id_comprobante",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "comprobantes",
+		"column_name" : "id_company",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "comprobantes",
+		"column_name" : "id_usuario",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "comprobantes",
+		"column_name" : "fecha",
+		"data_type" : "date"
+	},
+	{
+		"table_name" : "comprobantes",
+		"column_name" : "neto",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "comprobantes",
+		"column_name" : "iva",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "comprobantes",
+		"column_name" : "total",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "comprobantes",
+		"column_name" : "comision",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "comprobantes",
+		"column_name" : "depositado",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "comprobantes",
+		"column_name" : "registrado",
+		"data_type" : "boolean"
+	},
+	{
+		"table_name" : "company",
+		"column_name" : "id_company",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "company",
+		"column_name" : "created_at",
+		"data_type" : "timestamp without time zone"
+	},
+	{
+		"table_name" : "company",
+		"column_name" : "is_active",
+		"data_type" : "boolean"
+	},
+	{
+		"table_name" : "company",
+		"column_name" : "creado_por",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "boletas_sii",
+		"column_name" : "id",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "boletas_sii",
+		"column_name" : "id_company",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "boletas_sii",
+		"column_name" : "id_usuario",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "boletas_sii",
+		"column_name" : "folio",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "boletas_sii",
+		"column_name" : "neto",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "boletas_sii",
+		"column_name" : "iva",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "boletas_sii",
+		"column_name" : "total",
+		"data_type" : "numeric"
+	},
+	{
+		"table_name" : "boletas_sii",
+		"column_name" : "dte",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "boletas_sii",
+		"column_name" : "fecha",
+		"data_type" : "timestamp with time zone"
+	},
+	{
+		"table_name" : "boletas_sii",
+		"column_name" : "registrado",
+		"data_type" : "boolean"
+	},
+	{
+		"table_name" : "asientos_contables",
+		"column_name" : "id",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "asientos_contables",
+		"column_name" : "fecha",
+		"data_type" : "date"
+	},
+	{
+		"table_name" : "asientos_contables",
+		"column_name" : "debe",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "asientos_contables",
+		"column_name" : "usuario_id",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "asientos_contables",
+		"column_name" : "haber",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "asientos_contables",
+		"column_name" : "id_registro",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "asientos_contables",
+		"column_name" : "fecha_registro",
+		"data_type" : "date"
+	},
+	{
+		"table_name" : "asientos_contables",
+		"column_name" : "calculado",
+		"data_type" : "boolean"
+	},
+	{
+		"table_name" : "asientos_contables",
+		"column_name" : "id_company",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "gastos_imagen",
+		"column_name" : "id",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "gastos_imagen",
+		"column_name" : "id_company",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "gastos_imagen",
+		"column_name" : "fecha",
+		"data_type" : "date"
+	},
+	{
+		"table_name" : "gastos_imagen",
+		"column_name" : "total",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "gastos_imagen",
+		"column_name" : "iva",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "gastos_imagen",
+		"column_name" : "neto",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "gastos_imagen",
+		"column_name" : "folio",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "gastos_imagen",
+		"column_name" : "registrado",
+		"data_type" : "boolean"
+	},
+	{
+		"table_name" : "gastos_imagen",
+		"column_name" : "id_usuario",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "gastos_imagen",
+		"column_name" : "categoria_gasto",
+		"data_type" : "integer"
+	},
+	{
+		"table_name" : "usuario",
+		"column_name" : "user_name",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "usuario",
+		"column_name" : "email",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "usuario",
+		"column_name" : "name",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "usuario",
+		"column_name" : "first_surname",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "usuario",
+		"column_name" : "second_surname",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "usuario",
+		"column_name" : "password",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "usuario",
+		"column_name" : "refresh_token",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "codigo_sucursal",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "nce_nde_sobre_fact_compra",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "codigo_otro_impuesto",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "boletas_sii",
+		"column_name" : "vendedor",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "boletas_sii",
+		"column_name" : "sucursal",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "role",
+		"column_name" : "name",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "role",
+		"column_name" : "description",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "boletas_sii",
+		"column_name" : "estado_boleta",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "facturas_compra",
+		"column_name" : "folio",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "boletas_honorarios",
+		"column_name" : "rut",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "boletas_honorarios",
+		"column_name" : "nombre_razon_social",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "boletas_honorarios",
+		"column_name" : "es_soc_prof",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "comprobantes",
+		"column_name" : "terminal",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "asientos_contables",
+		"column_name" : "descripcion",
+		"data_type" : "text"
+	},
+	{
+		"table_name" : "feature",
+		"column_name" : "name",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "feature",
+		"column_name" : "description",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "comprobantes",
+		"column_name" : "tipo",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "comprobantes",
+		"column_name" : "estado",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "tipo_doc",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "tipo_venta",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "rut_cliente",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "razon_social",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "folio",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "asientos_contables",
+		"column_name" : "tipo",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "libro_mayor",
+		"column_name" : "cuenta",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "asientos_contables",
+		"column_name" : "categoria",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "clasificador_cuentas",
+		"column_name" : "tipo_cuenta",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "asientos_contables",
+		"column_name" : "cuenta",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "clasificador_proveedores_gastos",
+		"column_name" : "rut_proveedor",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "tipo_gasto",
+		"column_name" : "nombre_gasto",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "company",
+		"column_name" : "name",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "company",
+		"column_name" : "rut",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "company",
+		"column_name" : "address",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "company",
+		"column_name" : "rep_legal",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "company",
+		"column_name" : "email",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "company",
+		"column_name" : "phone",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "rut_emisor_liquid_factura",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "facturas_compra",
+		"column_name" : "nce_nde_sobre_factura_compra",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "facturas_compra",
+		"column_name" : "codigo_iva_no_rec",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "company",
+		"column_name" : "area",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "facturas_compra",
+		"column_name" : "codigo_otro_impuesto",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "tipo_docto_referencia",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "folio_docto_referencia",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "num_ident_receptor_extranjero",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "nacionalidad_receptor_extranjero",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "boletas_honorarios",
+		"column_name" : "estado",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "clasificador_cuentas",
+		"column_name" : "nombre_cuenta",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "facturas_compra",
+		"column_name" : "tipo_doc",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "balance_general",
+		"column_name" : "cuenta",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "facturas_compra",
+		"column_name" : "tipo_compra",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "facturas_compra",
+		"column_name" : "rut_proveedor",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "gastos_imagen",
+		"column_name" : "rut",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "gastos_imagen",
+		"column_name" : "articulos",
+		"data_type" : "text"
+	},
+	{
+		"table_name" : "facturas_compra",
+		"column_name" : "razon_social",
+		"data_type" : "character varying"
+	},
+	{
+		"table_name" : "facturas_venta",
+		"column_name" : "numero_interno",
+		"data_type" : "character varying"
+	}
+]}
