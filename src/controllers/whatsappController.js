@@ -31,11 +31,11 @@ async function manejarMensaje(msg) {
             // Analizar el mensaje con el contexto guardado
             const tipo = await procesarMensajeCliente(msg.body, whatsappNumber, historial);
             console.log("tipo", tipo);
-            if (tipo === 1){
+            if (tipo === "1"){
                 const respuesta = await tipo1(msg.body, whatsappNumber, historial);
                 await msg.reply({respuesta});
             }
-            else if (tipo === 2){
+            else if (tipo === "2"){
                 const respuesta = await tipo2(msg.body, whatsappNumber, historial);
                 await msg.reply({respuesta});
             }
