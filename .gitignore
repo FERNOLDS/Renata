@@ -1,0 +1,12 @@
+# Ignorar archivos temporales
+*.tmp
+
+# Ignorar directorios específicos
+/logs/
+/node_modules/
+
+/.wwebjs_auth
+/.wwebjs_cache
+# Ignorar archivos específicos
+secret.txt
+.env
