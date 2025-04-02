@@ -1,31 +1,42 @@
 
 const axios = require('axios');
-
-const { pool } = require('../../config/database'); // Conexión a PostgreSQL con pgvector
-
 require('dotenv').config();
+const pool = require('../../config/database'); // Conexión al pool de PostgreSQL
 
 async function buscarNormativa(preguntaUsuario) {
     try {
         // Convertimos la pregunta del usuario en un embedding
-        const embeddingResponse = await openai.embeddings.create({
-            model: 'text-embedding-ada-002',
-            input: preguntaUsuario
-        });
-
-        const embedding = embeddingResponse.data[0].embedding;
+        const embeddingResponse = await axios.post(
+            'https://api.openai.com/v1/embeddings',
+            {
+                model: 'text-embedding-ada-002', // Modelo de embeddings
+                input: preguntaUsuario,
+            },
+            {
+                headers: {
+                    'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`,
+                    'Content-Type': 'application/json',
+                },
+            }
+        );
+        
+        let embedding = embeddingResponse.data.data[0].embedding;
+        const formatoFinal = JSON.stringify(embedding); // Convierte a cadena JSON (compatible con PostgreSQL JSONB)
 
         // Consulta en la base de datos para buscar el texto más cercano
         const query = `
-            SELECT texto FROM normativas 
+            SELECT respuesta FROM normativastributariaslaborales 
             ORDER BY embedding <-> $1 
             LIMIT 1;
         `;
-        const { rows } = await pool.query(query, [embedding]);
+        
+        const { rows } = await pool.query(query, [formatoFinal]);
+        const respuestaString = rows.length ? rows[0].respuesta : "No tengo información al respecto. perro";
+        console.log('Respuesta de la base de datos:', respuestaString);
 
-        return rows.length ? rows[0].texto : null;
+        return respuestaString;
     } catch (error) {
-        console.error('⚠️ Error al buscar normativa:', error);
+        console.error('⚠️ Error al buscar normativa:', error.message);
         return null;
     }
 }
@@ -37,19 +48,27 @@ async function tipo2(preguntaUsuario, whatsappNumber, historial) {
     }
 
     try {
-        const response = await openai.chat.completions.create({
-            model: 'gpt-4-mini',
-            messages: [
-                { role: 'system', content: 'Responde con base en la normativa proporcionada, sin inventar información.' },
-                { role: 'user', content: `Pregunta: ${preguntaUsuario}\n\nNormativa relevante: ${resutadoVectorial}` }
-            ],
-            max_tokens: 200,
-            temperature: 0.5
-        });
+        const response = await axios.post(
+            'https://api.openai.com/v1/chat/completions',
+            {
+                model: 'gpt-4o',
+                messages: [
+                    { role: 'system', content: 'Responde con base en la normativa proporcionada, sin inventar información.' },
+                    { role: 'user', content: `Pregunta: ${preguntaUsuario}\n\nNormativa relevante: ${resutadoVectorial}` },
+                ],
+                max_tokens: 150,
+                temperature: 0.2,
+            },
+            {
+                headers: {
+                    'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`,
+                    'Content-Type': 'application/json',
+                }
+            }
+        );
+        return response.data.choices[0].message.content;
 
-        return response.choices[0].message.content;
-                //agregar logica para que  chat gpt encuentre la respuesta en mi base de datoss vectorial 
-
+                
     } catch (error) {
         console.error('⚠️ Error al consultar OpenAI:', error.response?.data || error.message);
         return 'Hubo un problema al generar la respuesta.';

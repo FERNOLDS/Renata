@@ -73,7 +73,7 @@ Recuerda: La consulta debe incluir SIEMPRE un filtro WHERE id_company = ${id_com
 ` },
                 ],
                 max_tokens: 300,
-                temperature: 0.7,
+                temperature: 0.3,
             },
             {
                 headers: {

@@ -22,7 +22,7 @@ async function obtenerRespuestaGPT(pregunta, whatsappNumber, historial) {
                     { role: 'user', content: contexto },
                 ],
                 max_tokens: 150,
-                temperature: 0.7,
+                temperature: 0.5,
             },
             {
                 headers: {
@@ -31,8 +31,6 @@ async function obtenerRespuestaGPT(pregunta, whatsappNumber, historial) {
                 }
             }
         );
-        console.log('Respuesta completa:', response.data);
-
         return response.data.choices[0].message.content;
     } catch (error) {
         console.error('⚠️ Error al consultar OpenAI perro:', error.response?.data || error.message);

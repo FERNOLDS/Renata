@@ -38,7 +38,12 @@ async function manejarMensaje(msg) {
             }
             else if (tipo === "2"){
                 const respuesta = await tipo2(msg.body, whatsappNumber, historial);
-                await msg.reply({respuesta});
+                try {
+                    await msg.reply(respuesta.toString());
+                } catch (error) {
+                    console.error("⚠️ Error al enviar el mensaje a WhatsApp:", error);
+                }
+                
             }
             else{
                 const respuesta = await obtenerRespuestaGPT(msg.body, whatsappNumber, historial);
